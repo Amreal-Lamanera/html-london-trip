@@ -1,128 +1,145 @@
 <!DOCTYPE html>
 <html lang="it">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTML London Trip</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML London Trip</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-    <body>
-        <header>
-            <!-- Intestazione Pagina -->
-            <h1>Il mio Viaggio a Londra</h1>
-            <div class="pics">
-                <img src="img/pexels-bill-emrich-230794-0.jpg" alt="Foto Panoramica di Londra divisa in 3 riquadri Parte 1">
-                <img src="img/pexels-bill-emrich-230794-1.jpg" alt="Foto Panoramica di Londra divisa in 3 riquadri Parte 2">
-                <img src="img/pexels-bill-emrich-230794-2.jpg" alt="Foto Panoramica di Londra divisa in 3 riquadri Parte 3">
-            </div>
-        </header>
+  <body>
+    <header>
+      <!-- Intestazione Pagina -->
+      <h1>Il mio Viaggio a Londra</h1>
+      <div class="pics">
+        <img src="img/pexels-bill-emrich-230794-0.jpg" alt="Foto Panoramica di Londra divisa in 3 riquadri Parte 1">
+        <img src="img/pexels-bill-emrich-230794-1.jpg" alt="Foto Panoramica di Londra divisa in 3 riquadri Parte 2">
+        <img src="img/pexels-bill-emrich-230794-2.jpg" alt="Foto Panoramica di Londra divisa in 3 riquadri Parte 3">
+      </div>
+    </header>
+    <!-- HR definito come il passaggio da "una scena ad un'altra", quindi solitamente viene messo alla fine di un paragrafo. Le section fanno già questo passaggio semantico, quindi tra le section e i tag main, footer, header... non sono semanticamente corretti; quindi hr meglio usarlo all'interno dei tag e non fra di essi. Per l'esercizio può andare, meglio dentro i tag semantici, ma in generale è poco utilizzato per questo scopo. -->
+    <hr>
 
-        <hr>
+    <main>
+      <!-- Corpo Pagina -->
+      <section>
+        <!-- Prima sezione - spese -->
+        <h3>Le mie spese</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Numero</th>
+              <th>Descrizione</th>
+              <th>Costo</th>
+            </tr>
+          </thead>
 
-        <main>
-            <!-- Corpo Pagina -->
-            <section>
-                <!-- Prima sezione - spese -->
-                <h3>Le mie spese</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Numero</th>
-                            <th>Descrizione</th>
-                            <th>Costo</th>
-                        </tr>
-                    </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Biglietto Aereo</td>
+              <td>120&euro;</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Biglietto Aereo</td>
+              <td>120&euro;</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Biglietto Aereo</td>
+              <td>120&euro;</td>
+            </tr>
+          </tbody>
 
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Biglietto Aereo</td>
-                            <td>120&euro;</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Biglietto Aereo</td>
-                            <td>120&euro;</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Biglietto Aereo</td>
-                            <td>120&euro;</td>
-                        </tr>
-                    </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Totale</td>
+              <td>360&euro;</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
 
-                    <tfoot>
-                        <tr>
-                            <td colspan="2">Totale</td>
-                            <td>360&euro;</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
+      <hr>
 
-            <hr>
+      <section>
+        <!-- Seconda sezione - cose da fare -->
+        <h4>Cose da fare</h4>
+        <ul>
+          <li>Visitare la Tower of London <strong>&cross;</strong></li>
+          <li>Visitare Greenwich <strong>&check;</strong></li>
+          <li>
+            Ascoltare un artista di strada a Covent Garden
+            <strong>&check;</strong>
+          </li>
+          <li>
+            Mangiare il tipoco Fish and Chips inglese <strong>&cross;</strong>
+          </li>
+        </ul>
+      </section>
 
-            <section>
-                <!-- Seconda sezione - cose da fare -->
-                <h4>Cose da fare</h4>
-                <ul>
-                    <li>Visitare la Tower of London <strong>&cross;</strong></li>
-                    <li>Visitare Greenwich <strong>&check;</strong></li>
-                    <li>Ascoltare un artista di strada a Covent Garden <strong>&check;</strong></li>
-                    <li>Mangiare il tipoco Fish and Chips inglese <strong>&cross;</strong></li>
-                </ul>
-            </section>
+      <hr>
 
-            <hr>
+      <section>
+        <!-- Terza sezione - Info utili -->
+        <h4>Info utili:</h4>
+        <ol>
+          <li>
+            <span>Numeri utili di emergenza</span>
+            <ul>
+              <li>
+                <span><strong>999</strong> - Emergenza</span>
+              </li>
+              <li>
+                <span><strong>101</strong> - Numero polizia</span>
+              </li>
+              <li>
+                <span><strong>111</strong> - Numero assistenza medica</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>Hotel</span>
+            <ul>
+              <li><strong>Nome Hotel:</strong> Buckingham Palace</li>
+              <li>
+                <strong>Indirizzo Hotel:</strong> Westminister, London SW1A1AA,
+                Regno Unito
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>Aereo</span>
+            <ul>
+              <li>
+                <strong>Volo di Andata:</strong> Y1234X ore 9.30 da Milano a
+                Malpensa
+              </li>
+              <li>
+                <strong>Volo di Ritorno:</strong> Y1236X ore 18.30 da London
+                Heathrow
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+    </main>
 
-            <section>
-                <!-- Terza sezione - Info utili -->
-                <h4>Info utili:</h4>
-                <ol>
-                    <li>
-                        <span>Numeri utili di emergenza</span>
-                        <ul>
-                            <li>
-                                <span><strong>999</strong> - Emergenza</span>
-                            </li>
-                            <li>
-                                <span><strong>101</strong> - Numero polizia</span>
-                            </li>
-                            <li>
-                                <span><strong>111</strong> - Numero assistenza medica</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span>Hotel</span>
-                        <ul>
-                            <li><strong>Nome Hotel:</strong> Buckingham Palace</li>
-                            <li><strong>Indirizzo Hotel:</strong> Westminister, London SW1A1AA, Regno Unito</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span>Aereo</span>
-                        <ul>
-                            <li><strong>Volo di Andata:</strong> Y1234X ore 9.30 da Milano a Malpensa</li>
-                            <li><strong>Volo di Ritorno:</strong> Y1236X ore 18.30 da London Heathrow</li>
-                        </ul>
-                    </li>
-                </ol>
-            </section>
-        </main>
+    <hr>
 
-        <hr>
-
-        <footer>
-            <!-- Piè di pagina -->
-            <h4>Le Foto</h4>
-            <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="Una foto di Londra">
-            <img src="https://pokerstarscareers.com/wp-content/uploads/2020/01/London-Wider-Area-e1597319992670-400x400.jpg" alt="Una foto di Londra">
-        </footer>
-    </body>
+    <footer>
+      <!-- Piè di pagina -->
+      <h4>Le Foto</h4>
+      <img
+        src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg"
+        alt="Una foto di Londra">
+      <img src="https://pokerstarscareers.com/wp-content/uploads/2020/01/London-Wider-Area-e1597319992670-400x400.jpg"
+        alt="Una foto di Londra">
+    </footer>
+  </body>
 
 </html>
 
